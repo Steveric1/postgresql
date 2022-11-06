@@ -1,0 +1,7 @@
+---
+- name: Install postgresql and setup altschool database
+  hosts: webservers
+  become: yes
+  tasks:
+     - name: install postgresql and setup a database and table for altschool
+       script: postgresql.sh
